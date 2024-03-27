@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patch Cafe Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <div id="title">
+        <h1>Patch Cafe Survey Form</h1>
+    </div>
+</header>
+
+<form id="survey-form">
+
+    <div id="description"> Let us know how we can improve our service</div><br>
+
+    <fieldset class="fieldset">
+
+        <div class="sub-group">
+            <label class="left" for="name">Name:</label>
+            <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="sub-group">
+            <label class="left" for="email">Email:</label>
+            <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email">
+        </div>
+
+        <div class="sub-group">
+            <label class="left" for="number">Age:</label>
+            <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+        </div>
+
+        <div class="sub-group">
+            <label class="left" for="handphone">Phone Number:</label>
+            <input type="text" placeholder="Phone Number" class="right input-field" id="handphone">
+        </div>
+
+        <div class="sub-group">
+            <label class="left" for="dropdown">*How often do you visit?</label>
+            <select class="right dropdown" id="dropdown" name="dropdown" required>
+                <option selected disabled>Select an option</option>
+                <option value="first">Daily</option>
+                <option value="second">2-3 times a week</option>
+                <option value="third">Once a week</option>
+                <option value="fourth">2-3 times a month</option>
+                <option value="fifth">Rarely</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+        <div class="sub-group">
+            <label class="left">*What brings you to our café most frequently?</label>
+            <ul style="list-style: none;" class="right">
+                <li class="checkbox"><label><input type="checkbox" name="game" value="exodus">Quality of coffee</label></li>
+                <li class="checkbox"><label><input type="checkbox" name="game" value="alcatraz">Pastries and desserts</label></li>
+                <li class="checkbox"><label><input type="checkbox" name="game" value="aokigahara">Atmosphere/ambiance</label></li>
+                <li class="checkbox"><label><input type="checkbox" name="game" value="mausoleum">Location/convenience</label></li>
+                <li class="checkbox"><label><input type="checkbox" name="game" value="others">Others (please specify): <input type="text" name="other_reason"></label></li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+        <div class="sub-group">
+            <label class="left">*On a scale of 1 to 5, how would you rate the quality of our food and beverages (1 being the lowest and 5 being the highest)?</label>
+            <ul style="list-style: none;" class="right">
+                <li class="radio"><label><input name="food_quality" value="1" type="radio" class="food_quality">1</label></li>
+                <li class="radio"><label><input name="food_quality" value="2" type="radio" class="food_quality">2</label></li>
+                <li class="radio"><label><input name="food_quality" value="3" type="radio" class="food_quality">3</label></li>
+                <li class="radio"><label><input name="food_quality" value="4" type="radio" class="food_quality">4</label></li>
+                <li class="radio"><label><input name="food_quality" value="5" type="radio" class="food_quality">5</label></li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+        <div class="sub-group">
+            <label class="left">*How satisfied are you with the friendliness of our staff?</label>
+            <ul style="list-style: none;" class="right">
+                <li class="radio"><label><input name="staff_friendliness" value="Extremely satisfied" type="radio" class="staff_friendliness">Extremely satisfied</label></li>
+                <li class="radio"><label><input name="staff_friendliness" value="Satisfied" type="radio" class="staff_friendliness">Satisfied</label></li>
+                <li class="radio"><label><input name="staff_friendliness" value="Neutral" type="radio" class="staff_friendliness">Neutral</label></li>
+                <li class="radio"><label><input name="staff_friendliness" value="Dissatisfied" type="radio" class="staff_friendliness">Dissatisfied</label></li>
+                <li class="radio"><label><input name="staff_friendliness" value="Extremely dissatisfied" type="radio" class="staff_friendliness">Extremely dissatisfied</label></li>
+            </ul>
+        </div>
+    </fieldset>
+
+<fieldset class="fieldset">
+        <div class="sub-group">
+            <label class="left">*Would you recommend our cafe to your friends?</label>
+            <ul style="list-style: none;" class="right">
+                <li class="radio"><label><input name="recommendation" value="1" type="radio" class="recommendation">Yes</label></li>
+                <li class="radio"><label><input name="recommendation" value="2" type="radio" class="recommendation">Maybe</label></li>
+                <li class="radio"><label><input name="recommendation" value="3" type="radio" class="recommendation">No</label></li>
+            </ul>
+        </div>
+</fieldset>
+
+    <fieldset class="fieldset">
+        <h2>Any comments or suggestions?</h2>
+        <div class="commentbox">
+            <textarea rows="4" placeholder="Enter your comment here..."></textarea>
+            <br><br>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </fieldset>
+    
+
+

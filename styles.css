@@ -1,0 +1,91 @@
+body {
+  background-image: url("patch.jpg"), linear-gradient(gray, rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 16px;
+}
+
+header {
+  font-family: Roboto;
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#survey-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-family: Quicksand;
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#description {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 17px;
+  font-weight: bold;
+}
+
+.fieldset {
+  border: none;
+}
+
+.sub-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+label.left {
+  flex-basis: 30%;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.right {
+  flex-basis: 60%;
+}
+
+.input-field, #dropdown, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox, .radio {
+  margin-bottom: 10px;
+}
+
+#submit {
+  background: #F3EEEA;
+  font-family: Roboto;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 581px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 801px) {
+  body {
+    font-size: 22px;
+  }
+}
