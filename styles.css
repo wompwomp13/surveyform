@@ -78,28 +78,42 @@ label:hover {
   cursor: pointer;
 }
 
-@media (min-width: 581px) {
+@media (min-width: 475px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1280px) {
   body {
     font-size: 18px;
   }
 }
 
-@media (min-width: 801px) {
+
+@media (min-width: 1536px) {
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
-}
-
-
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px; 
-  }
-
-  header {
-    font-size: 20px; 
-  }
-
-  
 }
